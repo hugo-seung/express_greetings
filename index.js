@@ -19,6 +19,7 @@ app.listen(3000, () => {
 
 // responds for root path
 app.get('/', function(request, response, next) {
+    console.log('...')
     response.send('Greetings!!!')
 })
 
