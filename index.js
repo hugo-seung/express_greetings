@@ -1,5 +1,5 @@
 // https://github.com/bitinn/node-fetch
-const fetch = require('node-fetch')
+// const fetch = require('node-fetch')
 
 // https://expressjs.com/ko/4x/api.html
 const express = require('express')
