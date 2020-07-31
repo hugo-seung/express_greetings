@@ -54,6 +54,7 @@ app.post('/*', (request, response, next) => {
 
 app.get('/*', (request, response, next) => {
   // console.log('request.path:', request.path)
+  response.set('Strict-Transport-Security', 'max-age=63072000; includeSubdomains; preload')
   const data = get_data(request)
   response.type('json')
   response.send(JSON.stringify(data, null, 4) + '\n')
